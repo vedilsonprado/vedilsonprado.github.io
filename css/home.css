@@ -1,0 +1,91 @@
+/* --- HERO SECTION --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh; /* Ocupa boa parte da tela */
+}
+
+.hero-text { max-width: 600px; }
+
+.hero-greeting {
+    color: var(--secondary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: var(--fs-xl);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text h1 span {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text .lead {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    max-width: 90%;
+}
+
+.cta-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* --- HERO IMAGE (AVATAR) --- */
+.hero-img-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Círculo decorativo atrás da foto */
+.hero-img-container::before {
+    content: '';
+    position: absolute;
+    top: -20px; right: -20px;
+    width: 100%; height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    z-index: -1;
+    animation: morph 6s ease-in-out infinite;
+}
+
+.hero-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Forma orgânica */
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transition: var(--transition);
+}
+
+.hero-img img:hover {
+    transform: scale(1.02) rotate(-2deg);
+    border-color: var(--secondary);
+}
+
+/* Animação do fundo da foto */
+@keyframes morph {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+    100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+}
+
+@media (max-width: 900px) {
+    .hero { flex-direction: column-reverse; text-align: center; justify-content: center; }
+    .hero-text { margin-top: 2rem; }
+    .cta-group { justify-content: center; }
+    .hero-img img { width: 280px; height: 280px; }
+}

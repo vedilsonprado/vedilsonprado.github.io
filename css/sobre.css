@@ -1,0 +1,136 @@
+/* --- LAYOUT DA PÁGINA SOBRE --- */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Coluna da bio maior que a lateral */
+    gap: 3rem;
+}
+
+/* --- 1. BIOGRAFIA & TEXTO --- */
+.bio-card {
+    background: var(--bg-glass);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bio-card p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.bio-highlight {
+    color: var(--text-main);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary);
+}
+
+/* --- 2. BADGES DE HABILIDADES (TECH STACK) --- */
+.tech-section {
+    margin-top: 2rem;
+}
+
+.badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.badge {
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    cursor: default;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Cores específicas para categorias de badges */
+.badge.frontend { background: rgba(227, 76, 38, 0.1); color: #ff9f43; border-color: rgba(227, 76, 38, 0.3); }
+.badge.backend { background: rgba(46, 204, 113, 0.1); color: #2ecc71; border-color: rgba(46, 204, 113, 0.3); }
+.badge.iot { background: rgba(52, 152, 219, 0.1); color: #3498db; border-color: rgba(52, 152, 219, 0.3); }
+.badge.vr { background: rgba(155, 89, 182, 0.1); color: #9b59b6; border-color: rgba(155, 89, 182, 0.3); }
+
+.badge:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* --- 3. ESTATÍSTICAS RÁPIDAS (CARD LATERAL) --- */
+.stats-card {
+    background: var(--primary-dark); /* Destaque mais escuro */
+    padding: 2rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 2rem; /* Fica fixo ao rolar */
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 0;
+    line-height: 1;
+}
+.stat-item p {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- 4. LINHA DO TEMPO (EXPERIÊNCIA) --- */
+.timeline {
+    margin-top: 4rem;
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid rgba(255,255,255,0.1);
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Bolinha da timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.6rem; top: 5px;
+    width: 16px; height: 16px;
+    background: var(--bg-body);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.timeline-item:hover::before {
+    background: var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 4px 10px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 850px) {
+    .about-grid { grid-template-columns: 1fr; }
+    .stats-card { position: static; flex-direction: row; justify-content: space-around; margin-bottom: 2rem; }
+}
+@media (max-width: 500px) {
+    .stats-card { flex-direction: column; text-align: center; }
+}

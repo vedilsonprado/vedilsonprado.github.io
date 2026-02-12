@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Alunos | Vedilson Santos</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/alunos.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        
+        <header class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">⚡</span> 
+                <span class="brand-text">Vedilson<span style="color:var(--primary)">.Dev</span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html"><span>🏠</span> <span class="nav-text">Início</span></a></li>
+                    <li><a href="sobre.html"><span>👤</span> <span class="nav-text">Sobre Mim</span></a></li>
+                    <li><a href="aulas.html"><span>📚</span> <span class="nav-text">Minhas Aulas</span></a></li>
+                    <li><a href="projetos.html"><span>💼</span> <span class="nav-text">Projetos</span></a></li>
+                    <li><a href="alunos.html" class="active"><span>🎓</span> <span class="nav-text">Área do Aluno</span></a></li>
+                </ul>
+            </nav>
+            
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center;" class="nav-text">
+                &copy; 2026 Vedilson S.
+            </div>
+        </header>
+
+        <main>
+            <div class="students-header">
+                <h2 class="section-title">Galeria de Talentos</h2>
+                <p>
+                    Uma seleção dos melhores projetos desenvolvidos durante as aulas de Desenvolvimento Web, IoT e Realidade Virtual. 
+                    Aqui a teoria se transforma em portfólio.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="student-card">
+                    <img src="https://source.unsplash.com/random/400x300/?website,code" alt="Thumbnail Projeto" class="card-thumb">
+                    <div class="card-body">
+                        <span class="project-category cat-web">Front-end</span>
+                        <h3 class="card-title">Landing Page Fintech</h3>
+                        <div class="student-name">
+                            <div class="student-avatar"></div>
+                            <span>Por: Ana Silva</span>
+                        </div>
+                        <p class="card-desc">
+                            Página institucional responsiva utilizando Flexbox e Grid Layout. Foco em acessibilidade e performance.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn-sm btn-view">Ver Demo</a>
+                            <a href="#" class="btn-sm btn-code">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <img src="https://source.unsplash.com/random/400x300/?electronics,arduino" alt="Thumbnail Projeto" class="card-thumb">
+                    <div class="card-body">
+                        <span class="project-category cat-iot">IoT / ESP32</span>
+                        <h3 class="card-title">Estação Meteorológica</h3>
+                        <div class="student-name">
+                            <div class="student-avatar" style="background:var(--secondary)"></div>
+                            <span>Por: Carlos Souza</span>
+                        </div>
+                        <p class="card-desc">
+                            Leitura de temperatura e umidade enviada via MQTT para um dashboard em Node-RED.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn-sm btn-view">Ver Vídeo</a>
+                            <a href="#" class="btn-sm btn-code">Código C++</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <img src="https://source.unsplash.com/random/400x300/?vr,virtual" alt="Thumbnail Projeto" class="card-thumb">
+                    <div class="card-body">
+                        <span class="project-category cat-vr">Realidade Virtual</span>
+                        <h3 class="card-title">Museu Virtual 3D</h3>
+                        <div class="student-name">
+                            <div class="student-avatar" style="background:var(--accent)"></div>
+                            <span>Equipe Alpha</span>
+                        </div>
+                        <p class="card-desc">
+                            Experiência imersiva de museu interativo criada com A-Frame e modelagem básica em Blender.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn-sm btn-view">Acessar VR</a>
+                            <a href="#" class="btn-sm btn-code">Repo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="student-card">
+                    <img src="https://source.unsplash.com/random/400x300/?dashboard,ui" alt="Thumbnail Projeto" class="card-thumb">
+                    <div class="card-body">
+                        <span class="project-category cat-web">Full Stack</span>
+                        <h3 class="card-title">Sistema de Tarefas</h3>
+                        <div class="student-name">
+                            <div class="student-avatar"></div>
+                            <span>Por: Marcos Lima</span>
+                        </div>
+                        <p class="card-desc">
+                            CRUD completo utilizando Node.js, Express e front-end com consumo de API Fetch.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn-sm btn-view">Testar App</a>
+                            <a href="#" class="btn-sm btn-code">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <section class="submit-section">
+                <h3>É meu aluno e quer seu projeto aqui?</h3>
+                <p style="margin-bottom: 1.5rem; color: var(--text-muted);">
+                    Envie o link do seu repositório e o deploy para avaliação. Os melhores projetos ganham destaque mensal.
+                </p>
+                <a href="mailto:seuemail@exemplo.com" class="btn btn-primary">Enviar Projeto 🚀</a>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

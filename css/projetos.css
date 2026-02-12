@@ -1,0 +1,144 @@
+/* --- PORTFÓLIO DO INSTRUTOR --- */
+
+/* 1. PROJETO EM DESTAQUE (Hero Project) */
+.featured-project {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    background: var(--bg-glass);
+    border: 1px solid var(--primary); /* Borda colorida para destaque */
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.15);
+}
+
+.featured-img {
+    height: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Overlay gradiente na imagem */
+.featured-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(15,15,18,0) 0%, rgba(15,15,18,1) 100%);
+}
+
+.featured-content {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.featured-label {
+    color: var(--primary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.featured-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.featured-content p {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+/* Lista de Tecnologias */
+.tech-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.tech-tag {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    background: rgba(255,255,255,0.05);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 2. GRID DE PROJETOS SECUNDÁRIOS */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--bg-body);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    border-color: var(--secondary);
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.link-icon {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+.link-icon:hover { color: var(--primary); }
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .featured-project { grid-template-columns: 1fr; }
+    .featured-img { height: 250px; }
+    .featured-img::after { background: linear-gradient(0deg, rgba(15,15,18,1) 0%, rgba(15,15,18,0) 100%); }
+    .featured-content { padding: 2rem; }
+}

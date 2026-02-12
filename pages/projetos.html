@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos | Vedilson Santos</title>
+    
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projetos.css">
+</head>
+<body>
+
+    <div class="app-layout">
+        
+        <header class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">⚡</span> 
+                <span class="brand-text">Vedilson<span style="color:var(--primary)">.Dev</span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html"><span>🏠</span> <span class="nav-text">Início</span></a></li>
+                    <li><a href="sobre.html"><span>👤</span> <span class="nav-text">Sobre Mim</span></a></li>
+                    <li><a href="aulas.html"><span>📚</span> <span class="nav-text">Minhas Aulas</span></a></li>
+                    <li><a href="projetos.html" class="active"><span>💼</span> <span class="nav-text">Projetos</span></a></li>
+                    <li><a href="alunos.html"><span>🎓</span> <span class="nav-text">Área do Aluno</span></a></li>
+                </ul>
+            </nav>
+            
+            <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center;" class="nav-text">
+                &copy; 2026 Vedilson S.
+            </div>
+        </header>
+
+        <main>
+            <h2 class="section-title">Portfólio Profissional</h2>
+            <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                Projetos de alta complexidade desenvolvidos para clientes e pesquisa técnica.
+            </p>
+
+            <article class="featured-project">
+                <div class="featured-img" style="background-image: url('https://source.unsplash.com/random/800x600/?vr,museum,3d');"></div>
+                
+                <div class="featured-content">
+                    <span class="featured-label">Projeto em Andamento</span>
+                    <h3>Museu Virtual Imersivo</h3>
+                    <p>
+                        Liderança técnica de uma equipe de 8 desenvolvedores na criação de uma experiência museológica completa em Realidade Virtual. 
+                        O projeto foca na preservação cultural digital, permitindo visitas interativas via browser (WebXR).
+                    </p>
+                    
+                    <div class="tech-stack-list">
+                        <span class="tech-tag">Unity 3D</span>
+                        <span class="tech-tag">A-Frame</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Gestão de Equipe</span>
+                    </div>
+
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" class="btn btn-primary">Ver Documentação</a>
+                        <a href="#" class="btn btn-outline">Demo (Alpha)</a>
+                    </div>
+                </div>
+            </article>
+
+            <div class="portfolio-grid">
+                
+                <article class="project-card">
+                    <img src="https://source.unsplash.com/random/400x300/?circuit,esp32" alt="IoT Project" class="card-img-top">
+                    <div class="card-content">
+                        <h4>Automação Industrial IoT</h4>
+                        <p>
+                            Sistema de monitoramento de sensores em tempo real utilizando ESP32. Implementação de protocolo MQTT para comunicação eficiente e dashboard de controle.
+                        </p>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">MQTT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="GitHub">🔗 GitHub</a>
+                            <a href="#" class="link-icon" title="Detalhes">📄 Detalhes</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://source.unsplash.com/random/400x300/?analytics,seo" alt="SEO Project" class="card-img-top">
+                    <div class="card-content">
+                        <h4>Portal de Licitações & SEO</h4>
+                        <p>
+                            Desenvolvimento de blog especializado em administração pública. Otimização técnica (SEO) para WordPress, alcançando o topo das buscas para termos de licitação.
+                        </p>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">SEO Técnico</span>
+                            <span class="tech-tag">PHP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="Acessar Site">🌐 Acessar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img src="https://source.unsplash.com/random/400x300/?code,server" alt="API Project" class="card-img-top">
+                    <div class="card-content">
+                        <h4>API de Gestão Acadêmica</h4>
+                        <p>
+                            Backend robusto para controle de notas e frequência de alunos. Arquitetura RESTful, autenticação JWT e integração com banco de dados SQL.
+                        </p>
+                        <div class="tech-stack-list">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-icon" title="GitHub">🔗 GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
