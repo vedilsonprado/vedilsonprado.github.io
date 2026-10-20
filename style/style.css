@@ -49,11 +49,11 @@ a {
     padding: 30px 0;
 }
 
-.cabecalho h1{
+.cabecalho h1 {
     color: white;
 }
 
-.etiqueta{
+.etiqueta {
     margin-bottom: 5px;
 
     color: #93c5fd;
@@ -75,7 +75,7 @@ a {
     list-style: none;
 }
 
-.menu-lista li{
+.menu-lista li {
     display: inline-block;
 
     margin-right: 8px;
@@ -96,3 +96,42 @@ a {
     text-decoration: none;
 }
 
+.secao {
+    padding: 72px 0;
+}
+
+.titulo-secao {
+    margin-bottom: 32px;
+    padding-left: 12px;
+
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+}
+
+.grade-cards {
+    display: grid;
+    gap: 24px;
+}
+
+.card {
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #d8e0e8;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(20, 45, 70, 0.08);
+
+}
+
+.lista-tecnologias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-tecnologias li{
+    padding: 10px 14px;
+    background-color: #fff;
+    display: inline-block;
+    border: 1px solid #d8e0e8;
+    border-radius: 999px;
+}
